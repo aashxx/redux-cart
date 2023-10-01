@@ -1,0 +1,55 @@
+@import 'colors';
+
+.cartItem {
+    background-color: $tertiary;
+    color: $primary;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+
+    > img {
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+    > div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        > button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: $primary;
+            color: $tertiary;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: $primary-dark;
+            }
+        }
+
+        > p {
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    > svg {
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: inline-block;
+        margin: auto;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
